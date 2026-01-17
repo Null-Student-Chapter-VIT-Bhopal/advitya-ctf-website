@@ -1,0 +1,589 @@
+[2026-01-14 17:05:51] ERROR: 💀 Server error in /leaderboard | IP: ::1 | Error: MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.createClient (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:237:11)
+    at NativeConnection.openUri (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/mongoose/lib/connection.js:1071:34)
+    at Mongoose.connect (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/mongoose/lib/mongoose.js:450:15)
+    at connectDB (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/.next/server/chunks/[root-of-the-server]__46a431d3._.js:60:132)
+    at GET (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/.next/server/chunks/[root-of-the-server]__46a431d3._.js:308:145)
+    at AsyncLocalStorage.run (node:async_hooks:335:14)
+    at AppRouteRouteModule.do (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:38775)
+    at /home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:48915
+    at /home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/lib/trace/tracer.js:170:36
+    at NoopContextManager.with (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+    at ContextAPI.with (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+    at NoopTracer.startActiveSpan (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+    at ProxyTracer.startActiveSpan (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854)
+    at /home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/lib/trace/tracer.js:152:103
+    at NoopContextManager.with (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+    at ContextAPI.with (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+    at NextTracerImpl.trace (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/lib/trace/tracer.js:152:28)
+    at /home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:48760
+    at AsyncLocalStorage.run (node:async_hooks:346:14)
+    at /home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:46097
+    at AsyncLocalStorage.run (node:async_hooks:346:14)
+    at /home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:46054
+    at AsyncLocalStorage.run (node:async_hooks:346:14)
+    at AppRouteRouteModule.handle (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:46008)
+[2026-01-14 17:05:51] ERROR: 💀 Server error in /leaderboard | IP: ::1 | Error: MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.createClient (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:237:11)
+    at NativeConnection.openUri (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/mongoose/lib/connection.js:1071:34)
+    at Mongoose.connect (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/mongoose/lib/mongoose.js:450:15)
+    at connectDB (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/.next/server/chunks/[root-of-the-server]__46a431d3._.js:60:132)
+    at GET (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/.next/server/chunks/[root-of-the-server]__46a431d3._.js:308:145)
+    at AsyncLocalStorage.run (node:async_hooks:335:14)
+    at AppRouteRouteModule.do (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:38775)
+    at /home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:48915
+    at /home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/lib/trace/tracer.js:170:36
+    at NoopContextManager.with (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+    at ContextAPI.with (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+    at NoopTracer.startActiveSpan (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+    at ProxyTracer.startActiveSpan (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854)
+    at /home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/lib/trace/tracer.js:152:103
+    at NoopContextManager.with (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+    at ContextAPI.with (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+    at NextTracerImpl.trace (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/lib/trace/tracer.js:152:28)
+    at /home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:48760
+    at AsyncLocalStorage.run (node:async_hooks:346:14)
+    at /home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:46097
+    at AsyncLocalStorage.run (node:async_hooks:346:14)
+    at /home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:46054
+    at AsyncLocalStorage.run (node:async_hooks:346:14)
+    at AppRouteRouteModule.handle (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:46008)
+[2026-01-14 17:06:34] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68c198ab4efd03ef41ca3d94 | Rank: 26 | IP: ::1
+[2026-01-14 17:06:35] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68c198ab4efd03ef41ca3d94 | Rank: 26 | IP: ::1
+[2026-01-14 17:06:51] INFO: ✅ Visible challenges fetched | Count: 0 | IP: ::1
+[2026-01-14 17:06:51] INFO: ✅ Visible challenges fetched | Count: 0 | IP: ::1
+[2026-01-14 17:06:52] INFO: ✅ Solved challenges fetched | Team: testing_team(Ignore) | Count: 0 | IP: ::1
+[2026-01-14 17:06:52] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68c198ab4efd03ef41ca3d94 | Rank: 26 | IP: ::1
+[2026-01-14 17:06:52] INFO: ✅ Solved challenges fetched | Team: testing_team(Ignore) | Count: 0 | IP: ::1
+[2026-01-14 17:06:52] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68c198ab4efd03ef41ca3d94 | Rank: 26 | IP: ::1
+[2026-01-14 17:06:54] INFO: ✅ Visible challenges fetched | Count: 0 | IP: ::1
+[2026-01-14 17:06:54] INFO: ✅ Visible challenges fetched | Count: 0 | IP: ::1
+[2026-01-14 17:06:54] INFO: ✅ Solved challenges fetched | Team: testing_team(Ignore) | Count: 0 | IP: ::1
+[2026-01-14 17:06:55] INFO: ✅ Solved challenges fetched | Team: testing_team(Ignore) | Count: 0 | IP: ::1
+[2026-01-14 17:08:47] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68c198ab4efd03ef41ca3d94 | Rank: 26 | IP: ::1
+[2026-01-14 17:08:47] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68c198ab4efd03ef41ca3d94 | Rank: 26 | IP: ::1
+[2026-01-14 17:12:19] INFO: ✅ Visible challenges fetched | Count: 0 | IP: ::1
+[2026-01-14 17:12:20] INFO: ✅ Visible challenges fetched | Count: 0 | IP: ::1
+[2026-01-14 17:12:20] INFO: ✅ Solved challenges fetched | Team: testing_team(Ignore) | Count: 0 | IP: ::1
+[2026-01-14 17:12:20] INFO: ✅ Solved challenges fetched | Team: testing_team(Ignore) | Count: 0 | IP: ::1
+[2026-01-14 17:12:28] INFO: ✅ Team Details Fetched → Team: testing_team(Ignore) | IP: ::1
+[2026-01-14 17:15:44] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68c198ab4efd03ef41ca3d94 | Rank: 26 | IP: ::1
+[2026-01-14 17:15:44] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68c198ab4efd03ef41ca3d94 | Rank: 26 | IP: ::1
+[2026-01-14 17:15:58] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68c198ab4efd03ef41ca3d94 | Rank: 25 | IP: ::1
+[2026-01-14 17:15:58] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68c198ab4efd03ef41ca3d94 | Rank: 25 | IP: ::1
+[2026-01-14 17:16:34] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68c198ab4efd03ef41ca3d94 | Rank: 21 | IP: ::1
+[2026-01-14 17:16:35] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68c198ab4efd03ef41ca3d94 | Rank: 21 | IP: ::1
+[2026-01-14 17:16:39] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68c198ab4efd03ef41ca3d94 | Rank: 21 | IP: ::1
+[2026-01-14 17:16:39] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68c198ab4efd03ef41ca3d94 | Rank: 21 | IP: ::1
+[2026-01-14 17:17:11] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68c198ab4efd03ef41ca3d94 | Rank: undefined | IP: ::1
+[2026-01-14 17:17:11] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68c198ab4efd03ef41ca3d94 | Rank: undefined | IP: ::1
+[2026-01-14 17:17:17] INFO: ✅ Visible challenges fetched | Count: 0 | IP: ::1
+[2026-01-14 17:17:17] INFO: ✅ Visible challenges fetched | Count: 0 | IP: ::1
+[2026-01-14 17:17:17] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68c198ab4efd03ef41ca3d94 | IP: ::1
+[2026-01-14 17:17:18] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68c198ab4efd03ef41ca3d94 | IP: ::1
+[2026-01-14 17:20:55] INFO: ✅ Visible challenges fetched | Count: 0 | IP: ::1
+[2026-01-14 17:20:56] INFO: ✅ Visible challenges fetched | Count: 0 | IP: ::1
+[2026-01-14 17:20:56] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-14 17:20:56] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-14 17:20:59] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-14 17:20:59] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-14 17:21:23] WARN: ❌ Invalid Team Lookup → Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-14 17:23:05] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-14 17:23:05] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-14 17:23:47] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-14 17:23:48] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-14 17:29:14] INFO: ✅ Visible challenges fetched | Count: 0 | IP: ::1
+[2026-01-14 17:29:14] INFO: ✅ Visible challenges fetched | Count: 0 | IP: ::1
+[2026-01-14 17:29:14] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-14 17:29:14] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-14 17:30:02] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-14 17:30:03] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-14 17:30:03] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-14 17:30:03] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-14 17:32:10] WARN: ❌ Invalid Team Lookup → Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-14 17:32:51] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-14 17:32:52] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-14 17:32:55] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-14 17:32:55] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-14 17:32:55] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-14 17:32:56] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-14 17:33:06] WARN: ❌ Team not found during /submit | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 18:43:56] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 18:43:57] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 18:43:57] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 18:43:58] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 18:52:23] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 18:52:23] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 18:52:23] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 18:52:24] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 18:52:31] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-15 18:52:31] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-15 18:54:00] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 18:54:01] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 18:54:01] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 18:54:01] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 19:01:49] WARN: ⚠️ Invalid token while fetching leaderboard | IP: ::1 | Error: jwt malformed
+[2026-01-15 19:01:49] WARN: ⚠️ Invalid token while fetching leaderboard | IP: ::1 | Error: jwt malformed
+[2026-01-15 19:24:33] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 19:24:34] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 19:24:34] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 19:24:34] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 19:24:43] WARN: ❌ Team not found during /submit | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 19:24:49] WARN: ❌ Team not found during /submit | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 19:29:54] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-15 19:29:55] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-15 21:20:45] WARN: ⚠️ Invalid token while fetching leaderboard | IP: ::1 | Error: jwt malformed
+[2026-01-15 21:20:46] WARN: ⚠️ Invalid token while fetching leaderboard | IP: ::1 | Error: jwt malformed
+[2026-01-15 21:21:08] WARN: ⚠️ Invalid token while fetching leaderboard | IP: ::1 | Error: jwt malformed
+[2026-01-15 21:21:09] WARN: ⚠️ Invalid token while fetching leaderboard | IP: ::1 | Error: jwt malformed
+[2026-01-15 21:21:36] WARN: ⚠️ Invalid token while fetching leaderboard | IP: ::1 | Error: jwt malformed
+[2026-01-15 21:21:37] WARN: ⚠️ Invalid token while fetching leaderboard | IP: ::1 | Error: jwt malformed
+[2026-01-15 21:33:48] WARN: ⚠️ Invalid token while fetching leaderboard | IP: ::1 | Error: jwt malformed
+[2026-01-15 21:33:49] WARN: ⚠️ Invalid token while fetching leaderboard | IP: ::1 | Error: jwt malformed
+[2026-01-15 21:49:49] ERROR: 💀 Too Many request | IP: ::1 | Error: ReferenceError: teamId is not defined
+    at POST (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/.next/server/chunks/[root-of-the-server]__278de076._.js:379:191)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AppRouteRouteModule.do (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:38696)
+    at async AppRouteRouteModule.handle (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:45978)
+    at async responseGenerator (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/.next/server/chunks/node_modules_next_ae81d156._.js:14164:38)
+    at async AppRouteRouteModule.handleResponse (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:1:187643)
+    at async handleResponse (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/.next/server/chunks/node_modules_next_ae81d156._.js:14226:32)
+    at async handler (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/.next/server/chunks/node_modules_next_ae81d156._.js:14278:13)
+    at async DevServer.renderToResponseWithComponentsImpl (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/base-server.js:1422:9)
+    at async DevServer.renderPageComponent (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/base-server.js:1474:24)
+    at async DevServer.renderToResponseImpl (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/base-server.js:1514:32)
+    at async DevServer.pipeImpl (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/base-server.js:1025:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/next-server.js:393:17)
+    at async DevServer.handleRequestImpl (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/base-server.js:916:17)
+    at async /home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/dev/next-dev-server.js:399:20
+    at async Span.traceAsyncFn (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/trace/trace.js:157:20)
+    at async DevServer.handleRequest (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/dev/next-dev-server.js:395:24)
+    at async invokeRender (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/lib/router-server.js:240:21)
+    at async handleRequest (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/lib/router-server.js:437:24)
+    at async requestHandlerImpl (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/lib/router-server.js:485:13)
+    at async Server.requestListener (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/lib/start-server.js:226:13)
+[2026-01-15 21:50:31] ERROR: 💀 Too Many request | IP: ::1 | Error: ReferenceError: teamId is not defined
+    at POST (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/.next/server/chunks/[root-of-the-server]__278de076._.js:379:191)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AppRouteRouteModule.do (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:38696)
+    at async AppRouteRouteModule.handle (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:45978)
+    at async responseGenerator (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/.next/server/chunks/node_modules_next_ae81d156._.js:14164:38)
+    at async AppRouteRouteModule.handleResponse (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:1:187643)
+    at async handleResponse (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/.next/server/chunks/node_modules_next_ae81d156._.js:14226:32)
+    at async handler (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/.next/server/chunks/node_modules_next_ae81d156._.js:14278:13)
+    at async DevServer.renderToResponseWithComponentsImpl (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/base-server.js:1422:9)
+    at async DevServer.renderPageComponent (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/base-server.js:1474:24)
+    at async DevServer.renderToResponseImpl (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/base-server.js:1514:32)
+    at async DevServer.pipeImpl (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/base-server.js:1025:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/next-server.js:393:17)
+    at async DevServer.handleRequestImpl (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/base-server.js:916:17)
+    at async /home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/dev/next-dev-server.js:399:20
+    at async Span.traceAsyncFn (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/trace/trace.js:157:20)
+    at async DevServer.handleRequest (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/dev/next-dev-server.js:395:24)
+    at async invokeRender (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/lib/router-server.js:240:21)
+    at async handleRequest (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/lib/router-server.js:437:24)
+    at async requestHandlerImpl (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/lib/router-server.js:485:13)
+    at async Server.requestListener (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/lib/start-server.js:226:13)
+[2026-01-15 21:50:45] ERROR: 💀 Too Many request | IP: ::1 | Error: ReferenceError: teamId is not defined
+    at POST (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/.next/server/chunks/[root-of-the-server]__278de076._.js:379:191)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AppRouteRouteModule.do (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:38696)
+    at async AppRouteRouteModule.handle (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:45978)
+    at async responseGenerator (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/.next/server/chunks/node_modules_next_ae81d156._.js:14164:38)
+    at async AppRouteRouteModule.handleResponse (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:1:187643)
+    at async handleResponse (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/.next/server/chunks/node_modules_next_ae81d156._.js:14226:32)
+    at async handler (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/.next/server/chunks/node_modules_next_ae81d156._.js:14278:13)
+    at async DevServer.renderToResponseWithComponentsImpl (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/base-server.js:1422:9)
+    at async DevServer.renderPageComponent (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/base-server.js:1474:24)
+    at async DevServer.renderToResponseImpl (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/base-server.js:1514:32)
+    at async DevServer.pipeImpl (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/base-server.js:1025:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/next-server.js:393:17)
+    at async DevServer.handleRequestImpl (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/base-server.js:916:17)
+    at async /home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/dev/next-dev-server.js:399:20
+    at async Span.traceAsyncFn (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/trace/trace.js:157:20)
+    at async DevServer.handleRequest (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/dev/next-dev-server.js:395:24)
+    at async invokeRender (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/lib/router-server.js:240:21)
+    at async handleRequest (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/lib/router-server.js:437:24)
+    at async requestHandlerImpl (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/lib/router-server.js:485:13)
+    at async Server.requestListener (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/lib/start-server.js:226:13)
+[2026-01-15 21:56:22] ERROR: 💀 Too Many request | IP: ::1 | Error: ReferenceError: team is not defined
+    at POST (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/.next/server/chunks/[root-of-the-server]__1c6c1389._.js:449:21)
+    at async AppRouteRouteModule.do (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:38696)
+    at async AppRouteRouteModule.handle (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:45978)
+    at async responseGenerator (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/.next/server/chunks/node_modules_next_ae81d156._.js:14164:38)
+    at async AppRouteRouteModule.handleResponse (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:1:187643)
+    at async handleResponse (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/.next/server/chunks/node_modules_next_ae81d156._.js:14226:32)
+    at async handler (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/.next/server/chunks/node_modules_next_ae81d156._.js:14278:13)
+    at async DevServer.renderToResponseWithComponentsImpl (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/base-server.js:1422:9)
+    at async DevServer.renderPageComponent (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/base-server.js:1474:24)
+    at async DevServer.renderToResponseImpl (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/base-server.js:1514:32)
+    at async DevServer.pipeImpl (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/base-server.js:1025:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/next-server.js:393:17)
+    at async DevServer.handleRequestImpl (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/base-server.js:916:17)
+    at async /home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/dev/next-dev-server.js:399:20
+    at async Span.traceAsyncFn (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/trace/trace.js:157:20)
+    at async DevServer.handleRequest (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/dev/next-dev-server.js:395:24)
+    at async invokeRender (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/lib/router-server.js:240:21)
+    at async handleRequest (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/lib/router-server.js:437:24)
+    at async requestHandlerImpl (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/lib/router-server.js:485:13)
+    at async Server.requestListener (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/lib/start-server.js:226:13)
+[2026-01-15 21:57:06] ERROR: 💀 Too Many request | IP: ::1 | Error: ReferenceError: team is not defined
+    at POST (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/.next/server/chunks/[root-of-the-server]__1c6c1389._.js:449:21)
+    at async AppRouteRouteModule.do (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:38696)
+    at async AppRouteRouteModule.handle (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:45978)
+    at async responseGenerator (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/.next/server/chunks/node_modules_next_ae81d156._.js:14164:38)
+    at async AppRouteRouteModule.handleResponse (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:1:187643)
+    at async handleResponse (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/.next/server/chunks/node_modules_next_ae81d156._.js:14226:32)
+    at async handler (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/.next/server/chunks/node_modules_next_ae81d156._.js:14278:13)
+    at async DevServer.renderToResponseWithComponentsImpl (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/base-server.js:1422:9)
+    at async DevServer.renderPageComponent (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/base-server.js:1474:24)
+    at async DevServer.renderToResponseImpl (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/base-server.js:1514:32)
+    at async DevServer.pipeImpl (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/base-server.js:1025:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/next-server.js:393:17)
+    at async DevServer.handleRequestImpl (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/base-server.js:916:17)
+    at async /home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/dev/next-dev-server.js:399:20
+    at async Span.traceAsyncFn (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/trace/trace.js:157:20)
+    at async DevServer.handleRequest (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/dev/next-dev-server.js:395:24)
+    at async invokeRender (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/lib/router-server.js:240:21)
+    at async handleRequest (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/lib/router-server.js:437:24)
+    at async requestHandlerImpl (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/lib/router-server.js:485:13)
+    at async Server.requestListener (/home/umair-malik/Desktop/AdVitya Projects/advitya-ctf-website/node_modules/next/dist/server/lib/start-server.js:226:13)
+[2026-01-15 21:58:53] WARN: ❌ Invalid Team Lookup → Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 21:59:06] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-15 21:59:07] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-15 21:59:09] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 21:59:10] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 21:59:10] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 21:59:11] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 21:59:17] WARN: ❌ Team not found during /submit | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 22:02:35] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-15 22:02:35] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-15 22:02:38] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 22:02:38] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 22:02:38] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 22:02:39] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 22:04:02] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 22:04:03] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 22:04:03] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 22:04:03] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 22:04:48] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-15 22:04:49] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-15 22:04:49] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 22:04:49] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 22:04:49] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 22:04:50] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 22:05:14] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 22:05:14] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 22:05:14] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 22:05:15] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 22:06:29] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 22:06:29] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 22:06:29] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 22:06:30] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 22:06:55] WARN: ❌ Invalid Team Lookup → Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 22:07:11] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-15 22:07:12] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-15 22:07:13] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 22:07:14] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 22:07:14] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 22:07:14] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 22:07:49] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 22:07:50] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 22:07:50] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 22:07:50] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 22:08:05] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 22:08:05] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 22:08:05] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 22:08:06] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 22:36:47] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-15 22:36:48] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-15 23:28:35] ERROR: 💀 Server error in get-challenges | IP: ::1 | Error: Error: querySrv EREFUSED _mongodb._tcp.cluster0.sxd7nkh.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:292:17)
+    at QueryReqWrap.callbackTrampoline (node:internal/async_hooks:130:17)
+[2026-01-15 23:28:36] ERROR: 💀 Server error in get-challenges | IP: ::1 | Error: Error: querySrv EREFUSED _mongodb._tcp.cluster0.sxd7nkh.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:292:17)
+    at QueryReqWrap.callbackTrampoline (node:internal/async_hooks:130:17)
+[2026-01-15 23:28:42] ERROR: 💀 Server error in get-challenges | IP: ::1 | Error: Error: querySrv EREFUSED _mongodb._tcp.cluster0.sxd7nkh.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:292:17)
+    at QueryReqWrap.callbackTrampoline (node:internal/async_hooks:130:17)
+[2026-01-15 23:28:42] ERROR: 💀 Server error in get-challenges | IP: ::1 | Error: Error: querySrv EREFUSED _mongodb._tcp.cluster0.sxd7nkh.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:292:17)
+    at QueryReqWrap.callbackTrampoline (node:internal/async_hooks:130:17)
+[2026-01-15 23:28:50] ERROR: 💀 Server error in /leaderboard | IP: ::1 | Error: Error: querySrv EREFUSED _mongodb._tcp.cluster0.sxd7nkh.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:292:17)
+    at QueryReqWrap.callbackTrampoline (node:internal/async_hooks:130:17)
+[2026-01-15 23:28:50] ERROR: 💀 Server error in /leaderboard | IP: ::1 | Error: Error: querySrv EREFUSED _mongodb._tcp.cluster0.sxd7nkh.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:292:17)
+    at QueryReqWrap.callbackTrampoline (node:internal/async_hooks:130:17)
+[2026-01-15 23:35:35] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 23:35:36] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 23:35:37] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 23:35:37] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 23:35:39] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-15 23:35:40] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-15 23:40:34] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 23:40:35] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 23:40:35] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 23:40:36] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 23:42:13] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 23:42:14] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 23:42:15] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 23:42:15] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 23:42:15] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 23:43:08] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 23:43:09] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-15 23:43:09] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-15 23:43:09] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 01:17:55] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-16 01:17:55] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-16 01:17:57] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 01:17:58] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 01:17:58] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 01:17:59] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 01:18:01] WARN: ❌ Invalid Team Lookup → Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 01:18:17] WARN: ❌ Invalid Team Lookup → Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 01:23:21] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 01:23:22] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 01:23:22] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 01:23:23] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 01:23:23] WARN: ❌ Invalid Team Lookup → Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 01:23:24] WARN: ❌ Invalid Team Lookup → Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 01:23:24] WARN: ❌ Invalid Team Lookup → Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 01:24:10] WARN: ❌ Invalid Team Lookup → Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 01:24:10] WARN: ❌ Invalid Team Lookup → Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 01:26:01] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 01:26:02] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 01:26:02] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 01:26:02] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 01:26:03] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 01:26:26] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 01:26:27] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 01:26:27] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 01:26:27] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 01:36:35] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 01:36:36] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 01:36:36] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 01:36:36] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 01:37:40] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 01:37:40] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 01:37:40] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 01:37:41] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 01:37:49] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-16 01:37:50] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-16 01:40:50] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 01:40:51] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 01:40:51] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 01:40:51] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 02:09:29] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-16 02:09:29] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-16 02:09:49] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 02:09:50] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 02:09:50] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 02:09:50] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 02:10:20] WARN: ❌ Team not found during /submit | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 02:11:15] WARN: ❌ Team not found during /submit | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 02:12:06] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 02:12:07] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 02:12:07] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 02:12:07] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 14:19:30] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 14:19:31] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 14:19:31] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 14:19:32] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 14:19:48] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-16 14:19:48] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-16 16:39:15] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 16:39:16] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 16:39:16] WARN: ❌ Team not found when fetching solved challenges | Team ID: undefined | IP: ::1
+[2026-01-16 16:39:16] WARN: ❌ Team not found when fetching solved challenges | Team ID: undefined | IP: ::1
+[2026-01-16 16:39:22] INFO: ✅ Leaderboard fetched with currentUser | Team ID: undefined | Rank: undefined | IP: ::1
+[2026-01-16 16:39:23] INFO: ✅ Leaderboard fetched with currentUser | Team ID: undefined | Rank: undefined | IP: ::1
+[2026-01-16 16:50:26] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 16:50:26] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 16:50:26] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a1ee2899f6b0dc09d55b4 | IP: ::1
+[2026-01-16 16:50:27] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a1ee2899f6b0dc09d55b4 | IP: ::1
+[2026-01-16 16:50:52] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a1ee2899f6b0dc09d55b4 | Rank: undefined | IP: ::1
+[2026-01-16 16:50:53] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a1ee2899f6b0dc09d55b4 | Rank: undefined | IP: ::1
+[2026-01-16 16:52:16] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 16:52:16] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 16:52:16] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a1ee2899f6b0dc09d55b4 | IP: ::1
+[2026-01-16 16:52:17] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a1ee2899f6b0dc09d55b4 | IP: ::1
+[2026-01-16 16:58:16] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 16:58:17] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 16:58:17] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a1fdc899f6b0dc09d55c6 | IP: ::1
+[2026-01-16 16:58:17] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a1fdc899f6b0dc09d55c6 | IP: ::1
+[2026-01-16 17:00:29] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 17:00:29] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 17:00:29] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 17:00:30] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 17:02:11] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-16 17:02:11] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-16 17:02:12] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 17:02:13] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 17:02:13] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 17:02:13] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 19:06:37] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 19:06:37] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 19:06:38] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 19:06:38] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 19:24:37] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 19:24:37] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 19:24:37] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 19:24:37] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 20:03:24] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 20:03:24] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 20:03:24] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 20:03:24] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 22:05:11] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 22:05:12] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 22:05:12] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a1fdc899f6b0dc09d55c6 | IP: ::1
+[2026-01-16 22:05:13] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a1fdc899f6b0dc09d55c6 | IP: ::1
+[2026-01-16 22:36:16] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-16 22:36:16] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 68bd4af3dc667ed4013631fe | Rank: undefined | IP: ::1
+[2026-01-16 22:36:24] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 22:36:25] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 22:36:25] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 22:36:25] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-16 22:36:35] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a1fdc899f6b0dc09d55c6 | Rank: undefined | IP: ::1
+[2026-01-16 22:36:36] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a1fdc899f6b0dc09d55c6 | Rank: undefined | IP: ::1
+[2026-01-16 22:36:38] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 22:36:38] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 22:36:38] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a1fdc899f6b0dc09d55c6 | IP: ::1
+[2026-01-16 22:36:39] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a1fdc899f6b0dc09d55c6 | IP: ::1
+[2026-01-16 22:36:50] WARN: ❌ Team not found during /submit | Team ID: 696a1fdc899f6b0dc09d55c6 | IP: ::1
+[2026-01-16 22:37:08] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 22:37:08] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 22:37:08] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a1fdc899f6b0dc09d55c6 | IP: ::1
+[2026-01-16 22:37:09] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a1fdc899f6b0dc09d55c6 | IP: ::1
+[2026-01-16 23:48:01] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 23:48:02] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-16 23:48:02] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a71843ad52be277ac1637 | IP: ::1
+[2026-01-16 23:48:03] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a71843ad52be277ac1637 | IP: ::1
+[2026-01-16 23:48:04] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a71843ad52be277ac1637 | Rank: undefined | IP: ::1
+[2026-01-16 23:48:04] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a71843ad52be277ac1637 | Rank: undefined | IP: ::1
+[2026-01-16 23:49:30] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a71843ad52be277ac1637 | Rank: undefined | IP: ::1
+[2026-01-16 23:49:31] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a71843ad52be277ac1637 | Rank: undefined | IP: ::1
+[2026-01-16 23:51:42] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a71843ad52be277ac1637 | Rank: undefined | IP: ::1
+[2026-01-16 23:51:43] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a71843ad52be277ac1637 | Rank: undefined | IP: ::1
+[2026-01-16 23:52:24] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a71843ad52be277ac1637 | Rank: undefined | IP: ::1
+[2026-01-16 23:52:24] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a71843ad52be277ac1637 | Rank: undefined | IP: ::1
+[2026-01-16 23:53:16] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a71843ad52be277ac1637 | Rank: undefined | IP: ::1
+[2026-01-16 23:53:16] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a71843ad52be277ac1637 | Rank: undefined | IP: ::1
+[2026-01-17 00:21:16] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a71843ad52be277ac1637 | Rank: undefined | IP: ::1
+[2026-01-17 00:21:16] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a71843ad52be277ac1637 | Rank: undefined | IP: ::1
+[2026-01-17 00:21:40] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a71843ad52be277ac1637 | Rank: undefined | IP: ::1
+[2026-01-17 00:21:40] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a71843ad52be277ac1637 | Rank: undefined | IP: ::1
+[2026-01-17 00:22:01] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a71843ad52be277ac1637 | Rank: undefined | IP: ::1
+[2026-01-17 00:22:02] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a71843ad52be277ac1637 | Rank: undefined | IP: ::1
+[2026-01-17 00:22:02] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a71843ad52be277ac1637 | Rank: undefined | IP: ::1
+[2026-01-17 00:22:07] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a71843ad52be277ac1637 | Rank: undefined | IP: ::1
+[2026-01-17 00:22:08] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a71843ad52be277ac1637 | Rank: undefined | IP: ::1
+[2026-01-17 00:22:08] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a71843ad52be277ac1637 | Rank: undefined | IP: ::1
+[2026-01-17 00:22:29] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a71843ad52be277ac1637 | Rank: undefined | IP: ::1
+[2026-01-17 00:22:30] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a71843ad52be277ac1637 | Rank: undefined | IP: ::1
+[2026-01-17 00:23:18] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a1fdc899f6b0dc09d55c6 | Rank: undefined | IP: ::1
+[2026-01-17 00:23:18] INFO: ✅ Leaderboard fetched with currentUser | Team ID: 696a1fdc899f6b0dc09d55c6 | Rank: undefined | IP: ::1
+[2026-01-17 00:24:54] INFO: ✅ Leaderboard fetched with currentUser | Team ID: undefined | Rank: undefined | IP: ::1
+[2026-01-17 00:24:54] INFO: ✅ Leaderboard fetched with currentUser | Team ID: undefined | Rank: undefined | IP: ::1
+[2026-01-17 00:25:18] WARN: ⚠️ Invalid token while fetching leaderboard | IP: ::1 | Error: Cannot access 'decoded' before initialization
+[2026-01-17 00:25:18] WARN: ⚠️ Invalid token while fetching leaderboard | IP: ::1 | Error: Cannot access 'decoded' before initialization
+[2026-01-17 00:37:45] WARN: ⚠️ Invalid token while fetching leaderboard | IP: ::1 | Error: Cannot access 'decoded' before initialization
+[2026-01-17 00:37:45] WARN: ⚠️ Invalid token while fetching leaderboard | IP: ::1 | Error: Cannot access 'decoded' before initialization
+[2026-01-17 00:37:46] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 00:37:46] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a1fdc899f6b0dc09d55c6 | IP: ::1
+[2026-01-17 00:37:46] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 00:37:47] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a1fdc899f6b0dc09d55c6 | IP: ::1
+[2026-01-17 00:50:23] WARN: ⚠️ Invalid token while fetching leaderboard | IP: ::1 | Error: Cannot access 'decoded' before initialization
+[2026-01-17 00:50:23] WARN: ⚠️ Invalid token while fetching leaderboard | IP: ::1 | Error: Cannot access 'decoded' before initialization
+[2026-01-17 00:50:39] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 00:50:39] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 00:50:39] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a1fdc899f6b0dc09d55c6 | IP: ::1
+[2026-01-17 00:50:40] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a1fdc899f6b0dc09d55c6 | IP: ::1
+[2026-01-17 00:50:45] WARN: ❌ Team not found during /submit | Team ID: 696a1fdc899f6b0dc09d55c6 | IP: ::1
+[2026-01-17 01:04:03] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 01:04:03] WARN: ⚠️ Invalid token while fetching leaderboard | IP: ::1 | Error: Cannot access 'decoded' before initialization
+[2026-01-17 01:04:03] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a71843ad52be277ac1637 | IP: ::1
+[2026-01-17 01:04:04] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 01:04:04] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a71843ad52be277ac1637 | IP: ::1
+[2026-01-17 01:04:04] WARN: ⚠️ Invalid token while fetching leaderboard | IP: ::1 | Error: Cannot access 'decoded' before initialization
+[2026-01-17 01:06:52] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 01:06:52] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 01:06:52] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a71843ad52be277ac1637 | IP: ::1
+[2026-01-17 01:06:53] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a71843ad52be277ac1637 | IP: ::1
+[2026-01-17 01:07:12] WARN: ⚠️ Invalid token while fetching leaderboard | IP: ::1 | Error: Cannot access 'decoded' before initialization
+[2026-01-17 01:07:13] WARN: ⚠️ Invalid token while fetching leaderboard | IP: ::1 | Error: Cannot access 'decoded' before initialization
+[2026-01-17 01:07:42] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 01:07:43] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 01:07:43] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-17 01:07:43] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-17 01:13:44] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 01:13:44] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-17 01:13:44] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 01:13:45] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-17 01:13:50] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 01:13:50] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-17 01:13:50] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 01:13:51] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-17 01:15:37] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 01:15:37] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 01:15:38] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 01:15:38] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-17 01:15:38] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-17 01:55:33] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::ffff:172.20.10.1
+[2026-01-17 01:55:33] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::ffff:172.20.10.1
+[2026-01-17 01:55:33] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a71843ad52be277ac1637 | IP: ::ffff:172.20.10.1
+[2026-01-17 01:55:33] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a71843ad52be277ac1637 | IP: ::ffff:172.20.10.1
+[2026-01-17 02:53:42] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::ffff:172.20.10.1
+[2026-01-17 02:53:42] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::ffff:172.20.10.1
+[2026-01-17 02:53:43] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a71843ad52be277ac1637 | IP: ::ffff:172.20.10.1
+[2026-01-17 02:53:43] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a71843ad52be277ac1637 | IP: ::ffff:172.20.10.1
+[2026-01-17 03:00:14] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 03:00:15] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 03:00:15] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a71843ad52be277ac1637 | IP: ::1
+[2026-01-17 03:00:15] WARN: ❌ Team not found when fetching solved challenges | Team ID: 696a71843ad52be277ac1637 | IP: ::1
+[2026-01-17 03:07:20] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 03:07:21] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 03:07:21] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-17 03:07:21] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-17 03:10:29] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 03:10:30] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-17 03:10:30] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 03:10:30] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-17 03:10:40] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 03:10:41] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-17 03:10:41] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 03:10:41] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-17 15:35:46] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 15:35:46] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 15:35:47] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-17 15:35:47] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-17 15:37:06] INFO: ✅ Visible challenges fetched | Count: 2 | IP: ::1
+[2026-01-17 15:37:06] INFO: ✅ Visible challenges fetched | Count: 2 | IP: ::1
+[2026-01-17 15:37:07] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-17 15:37:07] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-17 15:37:14] INFO: ✅ Visible challenges fetched | Count: 2 | IP: ::1
+[2026-01-17 15:37:15] INFO: ✅ Visible challenges fetched | Count: 2 | IP: ::1
+[2026-01-17 15:37:15] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-17 15:37:16] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-17 17:05:24] INFO: ✅ Visible challenges fetched | Count: 0 | IP: ::1
+[2026-01-17 17:05:24] INFO: ✅ Visible challenges fetched | Count: 0 | IP: ::1
+[2026-01-17 17:05:24] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-17 17:05:24] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-17 17:05:26] WARN: ⚠️ Invalid token while fetching leaderboard | IP: ::1 | Error: Cannot access 'decoded' before initialization
+[2026-01-17 17:05:27] WARN: ⚠️ Invalid token while fetching leaderboard | IP: ::1 | Error: Cannot access 'decoded' before initialization
+[2026-01-17 17:05:36] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 17:05:37] INFO: ✅ Visible challenges fetched | Count: 1 | IP: ::1
+[2026-01-17 17:05:37] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-17 17:05:37] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-17 17:32:36] WARN: ⚠️ Invalid token while fetching leaderboard | IP: ::1 | Error: Cannot access 'decoded' before initialization
+[2026-01-17 17:32:37] WARN: ⚠️ Invalid token while fetching leaderboard | IP: ::1 | Error: Cannot access 'decoded' before initialization
+[2026-01-17 17:38:23] INFO: ✅ Visible challenges fetched | Count: 0 | IP: ::1
+[2026-01-17 17:38:24] INFO: ✅ Visible challenges fetched | Count: 0 | IP: ::1
+[2026-01-17 17:38:24] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-17 17:38:24] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-17 17:38:24] WARN: ⚠️ Invalid token while fetching leaderboard | IP: ::1 | Error: Cannot access 'decoded' before initialization
+[2026-01-17 17:38:25] WARN: ⚠️ Invalid token while fetching leaderboard | IP: ::1 | Error: Cannot access 'decoded' before initialization
+[2026-01-17 17:39:44] INFO: ✅ Visible challenges fetched | Count: 0 | IP: ::1
+[2026-01-17 17:39:44] INFO: ✅ Visible challenges fetched | Count: 0 | IP: ::1
+[2026-01-17 17:39:44] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
+[2026-01-17 17:39:45] WARN: ❌ Team not found when fetching solved challenges | Team ID: 68bd4af3dc667ed4013631fe | IP: ::1
