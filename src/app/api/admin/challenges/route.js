@@ -8,7 +8,7 @@ export async function GET(req) {
   if (!authHeader || !authHeader.startsWith("Bearer ")) {
     return new Response(
       JSON.stringify({ success: false, message: "Unauthorized" }),
-      { status: 401, headers: { "Content-Type": "application/json" } }
+      { status: 401, headers: { "Content-Type": "application/json" } },
     );
   }
 
@@ -30,7 +30,7 @@ export async function GET(req) {
           challenges,
           message: "Admin access granted",
         }),
-        { status: 200, headers: { "Content-Type": "application/json" } }
+        { status: 200, headers: { "Content-Type": "application/json" } },
       );
     } else {
       return new Response(
@@ -39,7 +39,7 @@ export async function GET(req) {
           role: decoded.role,
           message: "Forbidden: Not Admin",
         }),
-        { status: 403, headers: { "Content-Type": "application/json" } }
+        { status: 403, headers: { "Content-Type": "application/json" } },
       );
     }
   } catch (err) {
@@ -47,7 +47,7 @@ export async function GET(req) {
 
     return new Response(
       JSON.stringify({ success: false, message: "Invalid or expired token" }),
-      { status: 401, headers: { "Content-Type": "application/json" } }
+      { status: 401, headers: { "Content-Type": "application/json" } },
     );
   }
 }
@@ -57,7 +57,7 @@ export async function POST(req) {
   if (!authHeader || !authHeader.startsWith("Bearer ")) {
     return new Response(
       JSON.stringify({ success: false, message: "Unauthorized" }),
-      { status: 401, headers: { "Content-Type": "application/json" } }
+      { status: 401, headers: { "Content-Type": "application/json" } },
     );
   }
 
@@ -88,6 +88,7 @@ export async function POST(req) {
         description,
         category,
         value,
+        type: "normal",
         flag,
         file_url,
         visible,
@@ -101,7 +102,7 @@ export async function POST(req) {
           message: "Uploaded Successfully",
           newChallenge,
         }),
-        { status: 200, headers: { "Content-Type": "application/json" } }
+        { status: 200, headers: { "Content-Type": "application/json" } },
       );
     } else {
       return new Response(
@@ -109,7 +110,7 @@ export async function POST(req) {
           success: false,
           message: "Forbidden: Not Admin",
         }),
-        { status: 403, headers: { "Content-Type": "application/json" } }
+        { status: 403, headers: { "Content-Type": "application/json" } },
       );
     }
   } catch (err) {
@@ -117,7 +118,7 @@ export async function POST(req) {
 
     return new Response(
       JSON.stringify({ success: false, message: "Invalid or expired token" }),
-      { status: 401, headers: { "Content-Type": "application/json" } }
+      { status: 401, headers: { "Content-Type": "application/json" } },
     );
   }
 }

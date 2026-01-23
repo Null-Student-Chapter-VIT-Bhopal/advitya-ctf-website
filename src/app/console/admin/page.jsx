@@ -11,12 +11,12 @@ import {
   Settings,
 } from "lucide-react";
 
-import Challenges from "@/components/admin/Challenges";
-import UsersComponent from "@/components/admin/Users";
-import Teams from "@/components/admin/Teams";
-import Logs from "@/components/admin/Logs";
-import Notifications from "@/components/admin/Notifications";
-import Controls from "@/components/admin/Controls";
+import Challenges from "@/app/console/admin/sections/Challenges/Challenges";
+import UsersComponent from "@/app/console/admin/sections/Users";
+import Teams from "@/app/console/admin/sections/Teams";
+import Logs from "@/app/console/admin/sections/Logs";
+import Notifications from "@/app/console/admin/sections/Notifications";
+import Controls from "@/app/console/admin/sections/Controls";
 
 import { useAuth } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
@@ -82,7 +82,7 @@ export default function Page() {
       {role == "sudo" && (
         <div>
           {/* NAV */}
-          <nav className="px-8 flex justify-between w-screen mt-4 lg:mt-0 border-b border-white/10 pb-4">
+          <nav className="px-8 fixed flex justify-between w-screen sm:mt-[-16px] border-b border-white/10 p-4 backdrop-blur-lg">
             <div className="flex flex-wrap space-x-4">
               {tabs.map((tab) => (
                 <button
@@ -104,6 +104,7 @@ export default function Page() {
               <span>Admin Panel</span>
             </div>
           </nav>
+          <nav className=" w-screen bg-transparent min-h-30 md:min-h-16 lg:min-h-12 "></nav>
 
           {/* CONTENT */}
           <section className="px-8 py-6">

@@ -144,11 +144,11 @@ export default function JoinTeam({ onJoined }) {
                   </option>
                   {teams.map((team) => (
                     <option
-                      key={team.name}
-                      value={team.name}
+                      key={team}
+                      value={team}
                       className="bg-black text-white text-lg"
                     >
-                      {team.name}
+                      {team}
                     </option>
                   ))}
                 </select>

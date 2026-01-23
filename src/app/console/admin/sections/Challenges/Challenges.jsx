@@ -1,0 +1,268 @@
+"use client";
+
+import React, { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import { Plus } from "lucide-react";
+
+import GetChallenges from "./components/GetChallenges";
+import NewNormalChall from "./components/NewNormalChall";
+import NewInstanceChall from "./components/NewInstanceChall";
+import { useAuth } from "@/context/AuthContext";
+
+const Challenges = () => {
+  const { user } = useAuth();
+  const router = useRouter();
+
+  const [challenges, setChallenges] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const [togglingId, setTogglingId] = useState(null);
+  const [deletingId, setDeletingId] = useState(null);
+  const [buildingId, setBuildingId] = useState(null);
+
+  const [showNewNormal, setShowNewNormal] = useState(false);
+  const [showNewInstance, setShowNewInstance] = useState(false);
+
+  /* ---------- auth + initial fetch ---------- */
+  useEffect(() => {
+    if (!user) {
+      router.push("/Auth/login");
+      return;
+    }
+    refreshChallenges();
+  }, [user]);
+
+  /* ---------- fetch ---------- */
+  const refreshChallenges = async () => {
+    try {
+      const token = localStorage.getItem("token");
+
+      const res = await fetch("/api/admin/challenges", {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+
+      const data = await res.json();
+      if (!data.success || data.role !== "sudo") {
+        router.push("/");
+        return;
+      }
+
+      setChallenges(data.challenges || []);
+    } catch (err) {
+      console.error("Fetch error:", err);
+      router.push("/");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  /* ---------- toggle visibility ---------- */
+  const toggleVisibility = async (challengeId, currentVisibility) => {
+    setTogglingId(challengeId);
+    try {
+      const token = localStorage.getItem("token");
+
+      const res = await fetch("/api/admin/challenges/toggleVisiblity", {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({
+          challengeId,
+          visible: !currentVisibility,
+        }),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        setChallenges((prev) =>
+          prev.map((ch) =>
+            ch._id === challengeId
+              ? { ...ch, visible: !currentVisibility }
+              : ch,
+          ),
+        );
+      }
+    } finally {
+      setTogglingId(null);
+    }
+  };
+
+  /* ---------- delete ---------- */
+  const deleteChallenge = async (challengeId) => {
+    if (!confirm("Are you sure you want to delete this challenge?")) return;
+
+    const adminPassword = prompt(
+      "Enter your admin password to confirm deletion:",
+    );
+    if (!adminPassword) return;
+
+    setDeletingId(challengeId);
+
+    try {
+      const token = localStorage.getItem("token");
+
+      const res = await fetch(`/api/admin/challenges/${challengeId}`, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({ adminPassword }),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        setChallenges((prev) => prev.filter((c) => c._id !== challengeId));
+      } else {
+        alert("Delete failed: " + data.message);
+      }
+    } catch (err) {
+      console.error("Delete error:", err);
+    } finally {
+      setDeletingId(null);
+    }
+  };
+
+  const buildInstance = async (id) => {
+    setBuildingId(id);
+    setChallenges((prev) =>
+      prev.map((c) =>
+        c._id === id
+          ? {
+              ...c,
+              instance: {
+                ...c.instance,
+                buildStatus: "building",
+                buildError: null,
+              },
+            }
+          : c,
+      ),
+    );
+    try {
+      const token = localStorage.getItem("token");
+      const res = await fetch("/api/admin/challenges/instance/build", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({ challengeId: id }),
+      });
+
+      const data = await res.json();
+      if (data.success) {
+        setChallenges((prev) =>
+          prev.map((c) =>
+            c._id === id
+              ? {
+                  ...c,
+                  instance: {
+                    ...c.instance,
+                    buildStatus: "built",
+                    buildError: null
+                  },
+                }
+              : c,
+          ),
+        );
+      }
+      if (!data.success) {
+        setChallenges((prev) =>
+          prev.map((c) =>
+            c._id === id
+              ? {
+                  ...c,
+                  instance: {
+                    ...c.instance,
+                    buildStatus: "failed",
+                    buildError: data.message || "Build failed",
+                  },
+                }
+              : c,
+          ),
+        );
+      }
+    } catch (err) {
+      setChallenges((prev) =>
+        prev.map((c) =>
+          c._id === id
+            ? {
+                ...c,
+                instance: {
+                  ...c.instance,
+                  buildStatus: "failed",
+                  buildError: err.message || "Build failed",
+                },
+              }
+            : c,
+        ),
+      );
+    } finally {
+      setBuildingId(null);
+    }
+  };
+
+  return (
+    <>
+      {/* HEADER */}
+      <div className="max-w-6xl mx-auto px-4 py-4">
+        <div className="flex items-center justify-between">
+          <h1 className="text-3xl font-semibold text-slate-100">
+            Challenges (Admin)
+          </h1>
+
+          <div className="flex gap-2">
+            <button
+              onClick={() => setShowNewNormal(true)}
+              className="inline-flex items-center gap-2 bg-white/20 hover:bg-white text-white hover:text-black px-4 py-2 rounded-4xl text-sm font-medium"
+            >
+              <Plus className="w-4 h-4" />
+              Add New Normal Challenge
+            </button>
+
+            <button
+              onClick={() => setShowNewInstance(true)}
+              className="inline-flex items-center gap-2 bg-white/20 hover:bg-white text-white hover:text-black px-4 py-2 rounded-4xl text-sm font-medium"
+            >
+              <Plus className="w-4 h-4" />
+              Add New Instance Challenge
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* LIST */}
+      <GetChallenges
+        challenges={challenges}
+        loading={loading}
+        togglingId={togglingId}
+        deletingId={deletingId}
+        onToggleVisibility={toggleVisibility}
+        onDeleteChallenge={deleteChallenge}
+        onBuildInstance={buildInstance}
+      />
+
+      {/* MODALS */}
+      {showNewNormal && (
+        <NewNormalChall
+          onClose={() => setShowNewNormal(false)}
+          onCreated={refreshChallenges}
+        />
+      )}
+
+      {showNewInstance && (
+        <NewInstanceChall
+          onClose={() => setShowNewInstance(false)}
+          onCreated={refreshChallenges}
+        />
+      )}
+    </>
+  );
+};
+
+export default Challenges;

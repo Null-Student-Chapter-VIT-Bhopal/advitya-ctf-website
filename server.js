@@ -1,8 +1,12 @@
 import http from "http";
 import next from "next";
 import { initSocket } from "./src/lib/socket.js";
+import dotenv from "dotenv";
+dotenv.config();
 
 const dev = process.env.NODE_ENV !== "production";
+console.log("NODE_ENV at runtime:", process.env.NODE_ENV);
+
 const app = next({ dev });
 const handle = app.getRequestHandler();
 

@@ -14,6 +14,7 @@ import {
 import { toast } from "react-toastify";
 import { useAuth } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
+import InstancePanel from "@/components/InstancePanel";
 
 const Challenges = () => {
   const [challenges, setChallenges] = useState([]);
@@ -80,7 +81,7 @@ const Challenges = () => {
 
           if (!challengesData.success) {
             throw new Error(
-              challengesData.message || "Failed to fetch challenges"
+              challengesData.message || "Failed to fetch challenges",
             );
           }
 
@@ -116,9 +117,9 @@ const Challenges = () => {
     } else {
       setFilteredChallenges(
         challenges.filter(
-          (challenge) => 
-            challenge.category.toLowerCase() === selectedCategory.toLowerCase()
-        )
+          (challenge) =>
+            challenge.category.toLowerCase() === selectedCategory.toLowerCase(),
+        ),
       );
     }
   }, [selectedCategory, challenges]);
@@ -269,7 +270,9 @@ const Challenges = () => {
             <div className="flex items-center gap-3 mb-6">
               <div className="flex items-center gap-2">
                 <Filter className="w-4 h-4 text-slate-400" />
-                <span className="text-slate-300 text-sm font-medium">Filter by category:</span>
+                <span className="text-slate-300 text-sm font-medium">
+                  Filter by category:
+                </span>
               </div>
               <div className="flex flex-wrap gap-2">
                 {categories.map((category) => (
@@ -291,10 +294,15 @@ const Challenges = () => {
             {/* Results count */}
             <div className="flex items-center gap-2 mb-4">
               <span className="text-slate-400 text-sm">
-                Showing {filteredChallenges.length} of {challenges.length} challenges
+                Showing {filteredChallenges.length} of {challenges.length}{" "}
+                challenges
                 {selectedCategory !== "all" && (
                   <span className="text-slate-300 font-medium ml-1">
-                    in {categories.find(cat => cat.value === selectedCategory)?.label}
+                    in{" "}
+                    {
+                      categories.find((cat) => cat.value === selectedCategory)
+                        ?.label
+                    }
                   </span>
                 )}
               </span>
@@ -307,16 +315,14 @@ const Challenges = () => {
               <div className="text-center py-16">
                 <Trophy className="w-16 h-16 text-slate-600 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold text-slate-300 mb-2">
-                  {selectedCategory === "all" 
-                    ? "No challenges available" 
-                    : `No challenges found in ${categories.find(cat => cat.value === selectedCategory)?.label} category`
-                  }
+                  {selectedCategory === "all"
+                    ? "No challenges available"
+                    : `No challenges found in ${categories.find((cat) => cat.value === selectedCategory)?.label} category`}
                 </h3>
                 <p className="text-slate-500">
-                  {selectedCategory === "all" 
-                    ? "Check back later for new challenges" 
-                    : "Try selecting a different category"
-                  }
+                  {selectedCategory === "all"
+                    ? "Check back later for new challenges"
+                    : "Try selecting a different category"}
                 </p>
               </div>
             ) : (
@@ -463,6 +469,10 @@ const Challenges = () => {
                       )}
                     </div>
 
+                    {selectedChallenge.type === "instance" && (
+                      <InstancePanel challengeId={selectedChallenge._id} />
+                    )}
+
                     {/* Flag Submission */}
                     {!solvedChallenges.has(selectedChallenge._id) && (
                       <div className="border-t border-white/20 pt-6">
@@ -476,7 +486,7 @@ const Challenges = () => {
                             onChange={(e) =>
                               handleFlagInputChange(
                                 selectedChallenge._id,
-                                e.target.value
+                                e.target.value,
                               )
                             }
                             onKeyPress={(e) =>

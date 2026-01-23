@@ -9,7 +9,7 @@ export async function DELETE(req, { params }) {
   if (!authHeader || !authHeader.startsWith("Bearer ")) {
     return new Response(
       JSON.stringify({ success: false, message: "Unauthorized" }),
-      { status: 401, headers: { "Content-Type": "application/json" } }
+      { status: 401, headers: { "Content-Type": "application/json" } },
     );
   }
 
@@ -18,23 +18,12 @@ export async function DELETE(req, { params }) {
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
     await connectDB();
-    const adminUser = await User.findById(decoded.userId);
+    const user = await User.findById(decoded.userId).select("+password");
 
-    if (adminUser.role === "sudo") {
+    if (user.role === "sudo") {
       try {
-
         const { id } = await params;
-        const { adminEmail, adminPassword } = await req.json();
-
-        console.log("Challenge delete attempt:", { id, adminEmail });
-
-        const user = await User.findOne({ email: adminEmail });
-        if (!user || user.role !== "sudo") {
-          return NextResponse.json(
-            { success: false, message: "Unauthorized. Sudo access required." },
-            { status: 403 }
-          );
-        }
+        const { adminPassword } = await req.json();
 
         if (!adminPassword) {
           return NextResponse.json(
@@ -42,7 +31,7 @@ export async function DELETE(req, { params }) {
               success: false,
               message: "Admin password is required for challenge deletion.",
             },
-            { status: 400 }
+            { status: 400 },
           );
         }
 
@@ -50,7 +39,7 @@ export async function DELETE(req, { params }) {
         if (!isPasswordValid) {
           return NextResponse.json(
             { success: false, message: "Invalid admin password." },
-            { status: 401 }
+            { status: 401 },
           );
         }
 
@@ -58,7 +47,7 @@ export async function DELETE(req, { params }) {
         if (!challenge) {
           return NextResponse.json(
             { success: false, message: "Challenge not found." },
-            { status: 404 }
+            { status: 404 },
           );
         }
 
@@ -68,13 +57,13 @@ export async function DELETE(req, { params }) {
             message: "Challenge deleted successfully.",
             challenge,
           },
-          { status: 200 }
+          { status: 200 },
         );
       } catch (err) {
         console.error("Delete challenge error:", err);
         return NextResponse.json(
           { success: false, message: "Server error." },
-          { status: 500 }
+          { status: 500 },
         );
       }
     } else {
@@ -83,7 +72,7 @@ export async function DELETE(req, { params }) {
           success: false,
           message: "Forbidden: Not Admin",
         }),
-        { status: 403, headers: { "Content-Type": "application/json" } }
+        { status: 403, headers: { "Content-Type": "application/json" } },
       );
     }
   } catch (err) {
@@ -91,7 +80,7 @@ export async function DELETE(req, { params }) {
 
     return new Response(
       JSON.stringify({ success: false, message: "Invalid or expired token" }),
-      { status: 401, headers: { "Content-Type": "application/json" } }
+      { status: 401, headers: { "Content-Type": "application/json" } },
     );
   }
 }
@@ -101,7 +90,7 @@ export async function PUT(req, { params }) {
   if (!authHeader || !authHeader.startsWith("Bearer ")) {
     return new Response(
       JSON.stringify({ success: false, message: "Unauthorized" }),
-      { status: 401, headers: { "Content-Type": "application/json" } }
+      { status: 401, headers: { "Content-Type": "application/json" } },
     );
   }
 
@@ -116,7 +105,7 @@ export async function PUT(req, { params }) {
     if (!user || user.role !== "sudo") {
       return NextResponse.json(
         { success: false, message: "Forbidden" },
-        { status: 403 }
+        { status: 403 },
       );
     }
 
@@ -150,14 +139,14 @@ export async function PUT(req, { params }) {
         status: 200,
 
         headers: { "Content-Type": "application/json" },
-      }
+      },
     );
   } catch (err) {
     console.error("JWT error:", err);
 
     return new Response(
       JSON.stringify({ success: false, message: "Invalid or expired token" }),
-      { status: 401, headers: { "Content-Type": "application/json" } }
+      { status: 401, headers: { "Content-Type": "application/json" } },
     );
   }
 }

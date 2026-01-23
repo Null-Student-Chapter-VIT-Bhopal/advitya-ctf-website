@@ -8,19 +8,17 @@ const SolveSchema = new mongoose.Schema(
       required: true,
       index: true,
     },
-
     user: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
       required: true,
     },
-
     solvedAt: {
       type: Date,
       default: Date.now,
     },
   },
-  { _id: false },
+  { _id: false }
 );
 
 const ChallengeSchema = new mongoose.Schema(
@@ -29,36 +27,53 @@ const ChallengeSchema = new mongoose.Schema(
     author: { type: String, required: true },
     description: { type: String, required: true },
 
-    category: {
-      type: String,
-      required: true,
-    },
-
+    category: { type: String, required: true },
     value: { type: Number, required: true },
 
+    /* ---------- EXISTING STATIC FLAG ---------- */
     flag: {
       type: String,
-      required: true,
+      required: function () {
+        return this.type !== "instance";
+      },
+    },
+
+    /* ---------- NEW: challenge type ---------- */
+    type: {
+      type: String,
+      enum: ["normal", "instance"],
+      default: "normal",
+      index: true,
+    },
+
+    /* ---------- NEW: instance config ---------- */
+    instance: {
+      image: String,        
+      exposePort: Number,   
+      timeout: Number,      
+      buildStatus: {
+        type: String,
+        enum: ["pending", "building", "built", "failed"],
+        default: "pending",
+      },
+      buildError: String,
     },
 
     file_url: { type: String },
 
-    visible: {
-      type: Boolean,
-      default: true,
-    },
+    visible: { type: Boolean, default: true },
 
     solvedBy: {
       type: [SolveSchema],
       default: [],
     },
   },
-  { timestamps: true },
+  { timestamps: true }
 );
 
 ChallengeSchema.index(
   { _id: 1, "solvedBy.team": 1 },
-  { unique: true, sparse: true },
+  { unique: true, sparse: true }
 );
 
 export default mongoose.models.Challenge ||
