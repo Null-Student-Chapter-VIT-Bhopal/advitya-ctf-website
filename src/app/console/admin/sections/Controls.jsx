@@ -17,9 +17,9 @@ const Controls = () => {
           <div className="w-16 h-16 bg-neutral-800 rounded-full flex items-center justify-center mb-6">
             <Settings className="w-8 h-8 text-neutral-500" />
           </div>
-          <h3 className="text-xl font-bold text-white mb-2">Configuration Panel</h3>
-          <p className="text-neutral-400 max-w-sm">
-            Control panel settings and environment variables configuration will be available here.
+          <h3 className="text-xl font-bold text-white mb-8">Configuration Panel</h3>
+          <p className="text-red-400 max-w-sm text-3xl uppercase font-black">
+            Under Construction... LOL 🤣
           </p>
         </div>
       </div>

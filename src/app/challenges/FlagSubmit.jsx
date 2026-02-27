@@ -21,7 +21,7 @@ const FlagSubmit = ({
         value={flagInput || ""}
         onChange={(e) => onFlagChange(e.target.value)}
         onKeyPress={(e) => onKeyPress(e, challengeId)}
-        placeholder="0x00{...}"
+        placeholder="4DV1TY426{...}"
         className="w-full px-4 py-3 bg-[#292929] border border-white/20 rounded-lg text-slate-100 placeholder-white/40 focus:outline-0 focus:border-white/80 break-all"
         disabled={isSubmitting}
       />

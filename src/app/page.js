@@ -145,8 +145,8 @@ function MatrixRain() {
 }
 
 /* ── Countdown timer ── */
-const START_TIME = new Date("2026-02-27T10:00:00+05:30").getTime();
-const END_TIME = new Date("2026-02-27T16:00:00+05:30").getTime();
+const START_TIME = new Date("2026-02-27T10:30:00+05:30").getTime();
+const END_TIME = new Date("2026-02-27T14:30:00+05:30").getTime();
 
 function CountdownTimer() {
   const [timeLeft, setTimeLeft] = useState({ d: 0, h: 0, m: 0, s: 0 });
@@ -505,10 +505,10 @@ const events = [
   },
   {
     title: "CTF — Capture The Flag",
-    date: "Feb 27, 2026 • 10 AM – 4 PM",
+    date: "Feb 27, 2026 • 10:30 AM – 02:30 PM",
     desc: "Battle Web, Pwn, Crypto & AI/ML challenges. Crack flags and dominate the leaderboard. Venue: AR-002.",
-    startDate: "2026-02-27T10:00:00+05:30",
-    endDate: "2026-02-27T16:00:00+05:30"
+    startDate: "2026-02-27T10:30:00+05:30",
+    endDate: "2026-02-27T14:00:00+05:30"
   },
   {
     title: "Hackathon — Phase 3: The Showdown",
