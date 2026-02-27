@@ -37,3 +37,6 @@ next-env.d.ts
 
 # BUG REPORT 
 BUG_REPORT.md
+
+
+/logs/

@@ -20,11 +20,7 @@ import {
   Sparkles,
 } from "lucide-react";
 
-/* ══════════════════════════════════════════════
-   UTILITY COMPONENTS
-   ══════════════════════════════════════════════ */
 
-/* ── Scroll-triggered reveal ── */
 function Reveal({ children, className = "", delay = 0, direction = "up" }) {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
@@ -452,10 +448,6 @@ function HiddenFlag() {
   );
 }
 
-/* ══════════════════════════════════════════════
-   STATIC DATA
-   ══════════════════════════════════════════════ */
-
 const categories = [
   {
     name: "Web Exploitation",
@@ -541,7 +533,6 @@ const clubLinks = [
   },
 ];
 
-/* ── Team data ── */
 const challengeDevs = [
   {
     name: "0xcafebabe",
@@ -631,16 +622,13 @@ const challengeDevs = [
 ];
 
 const webDevs = [
-  { name: "Umair Malik", link: "https://www.linkedin.com/in/parinita-piplewar/", tags: ["Frontend", "Backend" , "Database" , "Infrastructure" , "Auth" , "Security"] },
+  { name: "Umair Malik", link: "https://www.linkedin.com/in/umairmalik01/", tags: ["Frontend", "Backend" , "Database" , "Infrastructure" , "Auth" , "Security"] },
   { name: "Saurabh Sharma", link: "https://www.srbh.site/", tags: ["Frontend", "UI/UX"] },
-  { name: "Par1n1ta", link: "https://www.linkedin.com/in/parinita-piplewar/", tags: ["Frontend", "Notifications"] },
   { name: "AnkitS01", link: "https://linkedin.com/in/ankit-s01", tags: ["Frontend", "Home Page"] },
-  { name: "Snow", link: "https://www.linkedin.com/in/shital-das-537014326", tags: ["Frontend", "Rules Page"] },
+  { name: "Par1n1ta", link: "https://www.linkedin.com/in/parinita-piplewar/", tags: ["Contributor"] },
+  { name: "Snow", link: "https://www.linkedin.com/in/shital-das-537014326", tags: ["Contributor"]},
 ];
 
-/* ══════════════════════════════════════════════
-   TEAM MEMBER CARD
-   ══════════════════════════════════════════════ */
 function TeamMemberCard({ dev, delay }) {
   return (
     <Reveal delay={delay}>
